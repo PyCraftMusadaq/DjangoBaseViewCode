@@ -1,0 +1,12 @@
+There are two types of views in django,function based and class based. With Class base view there are two types one is Base View and other is Generic Base View.
+Base Views. 
+1. View 
+2. TemplateView 
+3. RedirectView 
+We will use these views in this sample project. in simple View we can use get,post,put delete functions according to our choice as well. 
+
+The Simple View can be used to do complete CRUD with simple  Base view like get, post,put,delete and updaet etc. The code snipet is given the views.py file 
+
+Now the remaining View like TemplateView is used to just render the template upon request a url. We can pass context into template view via url and and render that context back to template view method of that View. The Code snipet is given in the views.py file 
+
+Now the Third Is RedirectView which is nothing just to redirect to other view. If we want to create a view with multiple url than e can use this view which can be used to redirect to other view. the code example is given below with proper comments.  
