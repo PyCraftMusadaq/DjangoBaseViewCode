@@ -10,3 +10,7 @@ The Simple View can be used to do complete CRUD with simple  Base view like get,
 Now the remaining View like TemplateView is used to just render the template upon request a url. We can pass context into template view via url and and render that context back to template view method of that View. The Code snipet is given in the views.py file 
 
 Now the Third Is RedirectView which is nothing just to redirect to other view. If we want to create a view with multiple url than e can use this view which can be used to redirect to other view. the code example is given below with proper comments.  
+
+In DetailView we have to pass the URL with slug of pk and it will return the detail of matched primary key in the databse. the keyword arguments are model name and template_name and template_name_suffix and also context_object_name to change the context object name otherwise it is same as model name by default.We can also use get_context_data to add our own custom context data and then return to template
+
+So to get detail of single object we need pk in url and model and template name to get work on our object and thats it. 
